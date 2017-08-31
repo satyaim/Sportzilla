@@ -29,7 +29,7 @@ HTML, CSS, JS, JQUERY, BOOTSTRAP, SVG (ILLUSTRATOR), animate.css, wow.js, jinver
 
 3. Active(Major) Members(Contributors) (in alphabetical order):
 
-Arpit Anshuman, Honnesh, Satyavrat Sharma, Srivatsa Rampallai
+Arpit Anshuman, Honnesh, Satyavrat Sharma, Srivatsa Rampalli
 
 ---Backend---
 
