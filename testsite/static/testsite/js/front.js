@@ -3,14 +3,14 @@ $(function()
 	new WOW().init();
 });
 
- 
-$(window).load(function(){
+$(window).on('load', function() {
   $("body").load("front.html", function(){
-    /* place code need to executed after loader.html load */
+    
 
 setTimeout( function(){
 	$("#loader").css("display", "none");
- 	setTimeout( function(){$(".arrow-down").css("display", "block");},5000);
+ 	setTimeout( function(){$("body").css("overflow-y","visible");
+	$("html").css("overflow-y","visible");},5000);
 	$(".title").css("-webkit-animation-delay", "6s"); 
 	$(".title").css("-moz-animation-delay", "6s"); 
 	$(".title").css("animation-delay", "6s"); 
