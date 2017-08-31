@@ -26,8 +26,11 @@ Club Seniors have shown constant support throughout the course of making this we
 Skills Implemented:
 
 HTML, CSS, JS
+
 JQUERY, BOOTSTRAP
+
 SVG (ILLUSTRATOR)
+
 animate.css, wow.js, jinvertscroll.js, tilt.js
 
 Active Members/Contributors (alphabetical order):
