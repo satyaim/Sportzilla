@@ -20,7 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('main.urls'))
+    url(r"^soc/", include("social.apps.django_app.urls", namespace="social")),
+    url(r'^', include('main.urls')),
+
 ]
 
 if settings.DEBUG:
