@@ -2,7 +2,7 @@ from django.conf.urls import url, include
 from .import views
 
 
-app_name = 'testsite'
+app_name = 'main'
 
 urlpatterns = [
 
