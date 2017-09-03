@@ -8,9 +8,7 @@ import re
 
 # Create your views here.
 def main(request):
-    print(request.user)
     if (request.user.is_authenticated()):
-        print "fgdfg"
         user=request.user
         email=user.email
         tail = email.split('@')[1]
