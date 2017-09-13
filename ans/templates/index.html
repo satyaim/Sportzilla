@@ -51,12 +51,12 @@
             <span><img src="{%static 'images/user.svg'%}" height="25vh"><a id="username">{{user}}</a></span>
         </span>
 	<span onclick="window.location='logout'"><img src="{%static 'images/logout.svg'%}" height="25vh">Logout</span>
-<!-- Player adam -->
+<!-- Player eve -->
     </div>
     <div id="progress-bar" class="animate-progress">
         <span id="progressDone"><span></span></span>
     </div>
-    <div id="adam"></div>
+    <div id="eve"></div>
 
 <!-- Horizon/ Third Layer-->
     <div class="horizon scroll">
@@ -248,28 +248,28 @@
     <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
 </body>
 
-<!-- adam's movement -->
+<!-- eve's movement -->
 	<script type="text/javascript">
-        var adam = $('#adam'),
+        var eve = $('#eve'),
             pLocs = [0, -184, -368, -552, -736, -920, -1104, -1288],
             currFrm = 0,
             lastStep = 0;
 
-        $(window).scroll(function (adamnt) {
+        $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
             if (scroll > lastStep + 10) {
-                adam.css('background-image',' url("/static/images/spritesheet.png")');
+                eve.css('background-image',' url("/static/images/spritesheet.png")');
                 if (currFrm>=7) {
                     currFrm = -1;
                 }
-                adam.css('background-position', pLocs[++currFrm] + 'px 0px');
+                eve.css('background-position', pLocs[++currFrm] + 'px 0px');
                 lastStep = scroll;
             } else if (scroll < lastStep - 10) {
-                adam.css('background-image',' url("/static/images/image.png")');
+                eve.css('background-image',' url("/static/images/image.png")');
                 if (currFrm<=0) {
                     currFrm = 8;
                 }
-                adam.css('background-position', pLocs[--currFrm] + 'px 0px');
+                eve.css('background-position', pLocs[--currFrm] + 'px 0px');
                 lastStep = scroll;
             }
         });
