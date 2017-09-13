@@ -143,13 +143,9 @@ def detail(request, number):
 			no=5
 			left=5
 		s = u.answers_given.count('2')
-		list1 = list(u.answers_given)
-		if list1[6*(no-1)+qsno] == '3':
-			error = True
-		u.answers_given = ''.join(list1)
 		u.save()
 		qsleft=left-product.question_no
-		resp={'score':u.score,'error':error, 'hint':product.question,'skip':s,'djangoNoofQuestionsLeft':qsleft,'qsno':qsno}
+		resp={'score':u.score,'hint':product.question,'skip':s,'djangoNoofQuestionsLeft':qsleft,'qsno':qsno}
 		
 		return JsonResponse(resp)
 	else:
