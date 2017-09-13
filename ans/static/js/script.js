@@ -50,7 +50,7 @@ var userName = document.getElementById('username');
         });
 }(jQuery));
     function dismissDiv(x) 
-    {
+    {alert("error"); 
 	for(i=0;i<5;i++)
 		{
         	document.getElementById('Quiz'+String(i+1)).style.display='none';
@@ -62,7 +62,7 @@ var userName = document.getElementById('username');
             getCloseDivResponse(x);
         }
     }
-    function displayQuiz(x) {
+    function displayQuiz(x) {alert("error"); 
         document.getElementById('Quiz'+String(x+1)).style.display='block';
         document.getElementById('Available'+String(x+1)).style.display='none';
         disable_scroll();
@@ -99,19 +99,19 @@ window.onbeforeunload= function()
 $(document).ready(function() {
     disable_scroll();
 })
-function submitSol(x) {
+function submitSol(x) {alert("error"); 
     answer = document.getElementsByClassName('answer-field')[x-1].value;
     qno = document.getElementsByClassName('qno')[x-1].innerHTML;
     imgSrc = document.getElementsByClassName('questionImg')[x-1];
-    getAnsResponse(answer,qno,current);
+    getAnsResponse(answer,x);
 }
 function skipQues(x) {
-    if (skipsLeft.innerHTML == "0") {
+    if (skipsLeft.innerHTML == "0") {alert("error"); 
         document.getElementsByClassName('requestStatus')[x-1].innerHTML = "<strong>Sorry!!</strong> No skips left";
     } else {
         qno = document.getElementsByClassName('qno')[x-1].innerHTML;
         imgSrc = document.getElementsByClassName('questionImg')[x-1];
-        getSkipResponse(qno,current);
+        getSkipResponse(x);
     }
 }
 
@@ -145,7 +145,7 @@ function getInitialQuestions(current) { //Invoked when first time any Stadium di
         }
     });
 }
-function getAnsResponse(answer, current) { //Question no. Answer is passed. Check Answer and return.
+function getAnsResponse(answer, current) { alert("error"); //Question no. Answer is passed. Check Answer and return.
     $.ajax({
         url : "/accounts/profile/"+String(current)+"/answer/",
         type: "POST",
@@ -172,7 +172,7 @@ function getAnsResponse(answer, current) { //Question no. Answer is passed. Chec
         }
     });
 }
-function getSkipResponse(current) { //Question Number attempted passed when skip is clicked. Deduct 25 points.
+function getSkipResponse(current) { alert("error"); //Question Number attempted passed when skip is clicked. Deduct 25 points.
     $.ajax({
         url : "/accounts/profile/"+String(current)+"/skip/",
         type: "POST",
@@ -199,10 +199,11 @@ function getSkipResponse(current) { //Question Number attempted passed when skip
         }
     });
 }
-function getCloseDivResponse (current) { //Stadium number is passed when Leave Stadium is clicked deduct 50 points
+function getCloseDivResponse (current) {
+    alert("error"); //Stadium number is passed when Leave Stadium is clicked deduct 50 points
     $.ajax({
         url : "/accounts/profile/"+String(current)+"leave",
-        //type: "POST",
+        type: "POST",
         data: {'number':current},
         dataType: 'json',
         // handle a successful response
