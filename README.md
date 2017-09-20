@@ -1,5 +1,7 @@
 # Sportzilla
 
+SPORTZILLA'17
+
 ---Aim---
 
 Creating a website for a Pre-BOSM, Bits Pilani event of the same name.
@@ -7,6 +9,15 @@ Creating a website for a Pre-BOSM, Bits Pilani event of the same name.
 ---Testing Site---
 
 http://sportzillatest.pythonanywhere.com/home/ 
+(Hosted front page only)
+
+---Event Site---
+http://sportzilla.ml
+(Event started on 18th Sept, 2017)
+
+---Testing Site II---
+http://sportzilla.pythonanywhere.com/ 
+(Working Currently)
 
 ---Event Idea---
 
@@ -25,7 +36,7 @@ Club Seniors have shown constant support throughout the course of making this we
 
 2. Skills Implemented:
 
-HTML, CSS, JS, JQUERY, BOOTSTRAP, SVG (ILLUSTRATOR), animate.css, wow.js, jinvertscroll.js, tilt.js
+HTML, CSS, JS, JQUERY, BOOTSTRAP, SVG (ILLUSTRATOR), animate.css, wow.js, jinvertscroll.js, tilt.js, AJAX
 
 3. Active(Major) Members(Contributors) (in alphabetical order):
 
