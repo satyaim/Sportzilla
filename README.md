@@ -12,10 +12,12 @@ http://sportzillatest.pythonanywhere.com/home/
 (Hosted front page only)
 
 ---Event Site---
+
 http://sportzilla.ml
 (Event started on 18th Sept, 2017)
 
 ---Testing Site II---
+
 http://sportzilla.pythonanywhere.com/ 
 (Working Currently)
 
